@@ -159,7 +159,12 @@ body{
     }
 
     .navlogo{
-        margin: 30px 100px 0px 30px;
+        margin: 30px 20px 0px 20px;
+    }
+
+    .navbar>a{
+        padding: 40px 10px 20px 10px;
+        font-size: 12pt;
     }
 
     .card01{
@@ -170,17 +175,21 @@ body{
     .video{
         flex: 100%;
         max-width: 600px;
-        margin: 100px 50px;
+        margin: 50px 10px;
     }
 
     .video>video{
         flex: 100%;
-        max-width: 600px;
+        max-width: 365px;
     }
 
     .card02{
         flex: 100%;
         max-width: 700px;
+    }
+
+    .card02>img{
+        max-width: 270px;
     }
 
     .card03{
