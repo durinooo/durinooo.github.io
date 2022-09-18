@@ -114,7 +114,7 @@ body{
 }
 
 .card02.right{
-    height: 1000px;
+    height: 550px;
 }
 
 .card02>h2, p{
@@ -124,23 +124,49 @@ body{
 /*-----------------------------end of row2--------------------------*/
 
 .card03{
-    background-color: seagreen;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 1px 1px 2px rgb(219, 219, 219);
     max-width: 400px;
-    height: 200px;
+    height: 400px;
     flex: 1;
     position: relative;
     margin: 10px;
+    overflow: hidden;
+}
+
+.card03>a img{
+    position: relative;
+    width: 350px;
+    margin: 10px 10px;
+}
+
+.card03>a img:hover{
+    opacity: 0.7;
+}
+
+.card03>h4{
+    position: relative;
+    text-align: center;
+    margin: 0px 10px;
+    padding: 0;
 }
 
 /*-----------------------------end of row3--------------------------*/
 
 #footer{
-    background-color: cornflowerblue;
+    background-color: #f9c596;
+    box-shadow: 1px 1px 2px rgb(219, 219, 219);
     max-width: 1200px;
-    height: 50px;
+    height: 250px;
     flex: 1;
     position: relative;
     margin: 10px;
+}
+
+#footer>ul{
+    position: absolute;
+    top: 30%;
+    left: 36%;
 }
 
 #footer ul li{
@@ -148,11 +174,53 @@ body{
     float: left;
 }
 
+#footer>ul li a img{
+    width: 50px;
+    margin: 10px 0px 0px 10px; 
+    padding: 10px;
+}
+
+#fb:hover{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(81, 127, 255, 0.5);
+}
+
+#ig:hover{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(232, 58, 255, 0.5);
+}
+
+#yt:hover{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(247, 0, 0, 0.5);
+}
+
+#tt:hover{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(255, 37, 91, 0.5);
+}
+
+#twt:hover{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(0, 247, 255, 0.5);
+}
+
+#footer>h5{
+    position: absolute;
+    bottom: 20%;
+    left: 39%;
+}
+
 /*-----------------------------end of footer--------------------------*/
 
 /*-----------------------------for responsive flexbox--------------------------*/
 
-@media (max-width:940px){
+/*@media (max-width:940px){
     .navbar{
         flex: 100%;
         max-width: 800px;
@@ -201,7 +269,7 @@ body{
         flex: 100%;
         max-width: 700px;
     }
-}
+}*/
 
 @media (max-width:1000px){
     .navbar{
@@ -272,6 +340,7 @@ body{
     .card01{
         flex: 100%;
         max-width: 700px;
+        height: 300px;
     }
 
     .video{
@@ -288,10 +357,15 @@ body{
     .card02{
         flex: 100%;
         max-width: 700px;
+        height: 500px;
     }
 
     .card02>img{
         max-width: 270px;
+    }
+
+    .card02.right{
+        height: 700px;
     }
 
     .card03{
@@ -302,5 +376,23 @@ body{
     #footer{
         flex: 100%;
         max-width: 700px;
+    }
+
+    #footer>ul{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    
+    #footer>ul li a img{
+        width: 40px;
+        margin: 10px 0px 0px 10px; 
+        padding: 10px;
+    }
+
+    #footer>h5{
+        position: absolute;
+        bottom: 30%;
+        left: 23%;
     }
 }
