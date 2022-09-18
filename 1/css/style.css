@@ -203,6 +203,57 @@ body{
     }
 }
 
+@media (max-width:1000px){
+    .navbar{
+        flex: 100%;
+        max-width: 1000px;
+    }
+
+    .navlogo{
+        margin: 30px 400px 0px 20px;
+    }
+
+    .navbar>a{
+        padding: 40px 10px 20px 10px;
+        font-size: 12pt;
+    }
+
+    .card01{
+        
+        max-width: 900px;
+    }
+
+    .video{
+        
+        max-width: 800px;
+        margin: 50px 50px;
+    }
+
+    .video>video{
+        
+        max-width: 800px;
+    }
+
+    .card02{
+        
+        max-width: 900px;
+    }
+
+    .card02>img{
+        max-width: 270px;
+    }
+
+    .card03{
+        
+        max-width: 900px;
+    }
+
+    #footer{
+        
+        max-width: 900px;
+    }
+}
+
 @media (max-width:500px){
     .navbar{
         flex: 100%;
