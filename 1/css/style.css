@@ -152,7 +152,7 @@ body{
 
 /*-----------------------------for responsive flexbox--------------------------*/
 
-@media (max-width:800px){
+@media (max-width:940px){
     .navbar{
         flex: 100%;
         max-width: 800px;
