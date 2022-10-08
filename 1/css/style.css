@@ -141,3 +141,40 @@ body{
 
     
 }
+
+@media (max-width: 440px){
+    .card01{
+        flex:100%;
+        height: 200px;
+        margin: 2% 15%;
+    }
+
+    .card01>video{
+        width: 240px;
+        margin: 2% 7%;
+    }
+
+    .card02{
+        flex: 100%;
+        height: 250px;
+    }
+
+    .card02>video{
+        width: 380px;
+        margin: 4% 2%;
+    }
+
+    .card03{
+        flex: 100%;
+    }
+
+    .card03.left{
+        height: 450px;
+    }
+
+    .card03>img{
+        width: 340px;
+    }
+
+    
+}
