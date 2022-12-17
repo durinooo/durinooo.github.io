@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: transitionIn 0.5s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+body{
+    background-color: white;
+}
+
+#buttonTop{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    width: 70px;
+    height: 70px;
+    background-color: #f7cca1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border-radius: 50px;
+    border: none;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#buttonTop:hover{
+    background-color: #ff91c8;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#header{
+    position: relative;
+    max-width: 100%;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
+#headercont a{
+    display: flex;
+    float: left;
+}
+
+#headercont a img{
+    width: 80px;
+    margin: 30px 100px;
+}
+
+#navbar{
+    max-width: 100%;
+    height: 40px;
+    background-color: rgb(233, 233, 233);
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 4px rgb(92, 92, 92);
+}
+
+#navitems ul{
+    list-style: none;
+    margin-left: 50px;
+}
+
+#navitems li{
+    float: left;
+}
+
+#navitems img{
+    width: 40px;
+    padding: 9px;
+    position: relative;
+}
+
+#navitems img:hover{
+    opacity: 0.8;
+}
+
+.row{
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.card01{
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    z-index: -9;
+}
+
+.card01 video{
+    position: relative;
+    top: -270px;
+    margin: 0% auto;
+}
+
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    color: white;
+    z-index: 99;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.twice{
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.card02{
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    height: 1400px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.card02 img{
+    width: 400px;
+    box-shadow: 2px 1px 10px rgb(108, 108, 108);
+    margin: 90px 0px 0px 300px;
+}
+
+.card02 h4{
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 300px;
+}
+
+#tracklist{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 100px 0px 0px 300px;
+}
+
+.card02.right{
+    border-left: 1px solid black;
+    margin: 100px 0px;
+    overflow: auto;
+}
+
+.card02.right h1, p{
+    text-align: center;
+    margin: 0px 200px 0px 100px;
+}
+
+.card02.right h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35pt;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.card02.right p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#top{
+    text-align: left;
+}
+
+#bot{
+    text-align: left;
+    font-weight: 500;
+}
+
+.card03{
+    background-color: rgb(226, 226, 226);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11pt;
+    font-weight: 700;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    height: 90px;
+    overflow: hidden;
+}
+
+.card03 h2{
+    margin: 3% 8%;
+}
+
+.row.dis{
+    max-width: 100%;
+    height: 100%;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+
+.card04{
+    position: relative;
+    background-color: rgb(226, 226, 226);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    flex: 1;
+    max-width: 32%;
+    height: 100%;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.card04 a img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card04 a img:hover{
+    opacity: 0.8;
+}
+
+/*--------FOOOOOOTTTEEERRRRR--------------*/
+
+.footer{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 1px 4px white;
+    position: relative;
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footrow{
+    max-width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer01{
+    position:static;
+    flex: 1;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer02{
+    position:static;
+    flex: 1;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer01 h4, .footer02 h5{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footer01 h4{
+    margin-top: 50px;
+}
+
+#footernavbar{
+    max-width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 998;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footernavitems ul{
+    list-style: none;
+}
+
+#footernavitems li{
+    float: left;
+}
+
+#footernavitems img{
+    width: 40px;
+    padding: 9px;
+    position: relative;
+}
+
+#footernavitems img:hover{
+    opacity: 0.8;
+}
+
+/*responsive css*/
+
+@media (max-width: 1281px){
+    #header{
+        height: 120px;
+    }
+
+    #headercont a img{
+        width: 60px;
+        margin: 30px 0px 0px 100px;
+    }
+
+    .card01{
+        height: 400px;
+    }
+
+    .card01 video{
+        position: relative;
+        top: -270px;
+        margin: 0% auto;
+        width: 1500px;
+    }
+
+    .title{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 70px;
+        color: white;
+        z-index: 99;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    
+    .twice{
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+    .card02{
+        height: 1250px;
+    }
+
+    .card02 img{
+        width: 300px;
+        margin-left: 200px; 
+    }
+
+    .card02.right h1, p{
+        text-align: center;
+        margin: 0px 70px 0px 40px;
+    }
+
+    .card02 h4{
+        margin: 0px 200px;
+        font-size: 12pt;
+    }
+
+    #tracklist{
+        margin: 10px 200px;
+        font-size: 12pt;
+    }
+
+    #top, #bot{
+        font-size: 11pt;
+    }
+
+    #tracklist{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px){
+    #buttonTop{
+        width: 55px;
+        height: 55px;
+        font-size: 8pt;
+    }
+
+    #header{
+        height: 100px;
+    }
+
+    #headercont a img{
+        width: 50px;
+        margin: 20px 0px 0px 40px;
+    }
+
+    #navitems img{
+        width: 40px;
+        padding: 10px;
+        position: relative;
+    }
+
+    #navitems ul{
+        margin-left: 10px;
+    }
+
+    .card01{
+        height: 300px;
+    }
+
+    .card01 video{
+        position: relative;
+        top: -0px;
+        left: -0px;
+        margin: 0% auto;
+        width: 100%;
+    }
+
+    .title{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        color: white;
+        z-index: 99;
+        position: absolute;
+        left: 8%;
+        top: 30%;
+        margin: auto;
+    }
+    
+    .twice{
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+
+    .card02{
+        flex: 100%;
+        max-width: 600px;
+    }
+
+    .card02.left{
+        margin-top: -1px;
+        height: 650px;
+        width: 100%;
+        box-shadow: 2px 2px 2px rgb(194, 194, 194);
+    }
+
+    .card02 img{
+        width: 250px;
+        display: block;
+        margin: 10px auto; 
+    }
+
+    .card02.left h4{
+        display: block;
+        margin: 0 29%;
+        font-size: 10pt;
+    }
+
+    #tracklist{
+        display: block;
+        margin: 0% 29%;       
+        font-size: 10pt;
+    }
+
+    .card02.right{
+        overflow: hidden;
+        border-left: 0px solid rgb(255, 255, 255);
+        margin: 10px 40px;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
+    .card02.right h1, p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .card02.right h1{
+        font-size: 23pt;
+    }
+
+    .card02.right p{
+        font-size: 9pt;
+    }
+
+    .card03 h2{
+        font-size: 13pt;
+        margin: 10% 12%;
+    }
+
+    .card04{
+        flex: 100%;
+        max-width: 100%;
+        margin: 5% 10%;
+    }
+
+    #top, #bot{
+        font-size: 9pt;
+    }
+
+    #tracklist{
+        margin-top: 100px;
+    }
+
+    .footer{
+        font-size: 7pt;
+    }
+
+    #footernavitems img{
+        width: 35px;
+        padding: 9px;
+        position: relative;
+    }
+}
