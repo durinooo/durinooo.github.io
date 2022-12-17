@@ -314,7 +314,7 @@ body{
 
 /*responsive css*/
 
-@media (max-width: 1281px){
+@media screen and (min-width: 601px) and (max-width: 1281px){
     #header{
         height: 120px;
     }
@@ -383,7 +383,7 @@ body{
     }
 }
 
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     #buttonTop{
         width: 55px;
         height: 55px;
